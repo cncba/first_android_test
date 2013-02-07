@@ -40,5 +40,6 @@
 ·Android软件开发之发送短信与系统短信库解析（三十）
 ·Android游戏开发之使用AnimationDrable实现Frame动画
 ·Android游戏开发之Tween动画的实现</string>
-    
+    <string name="title_activity_splash">SplashActivity</string>
+
 </resources>
