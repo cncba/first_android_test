@@ -41,5 +41,8 @@
 ·Android游戏开发之使用AnimationDrable实现Frame动画
 ·Android游戏开发之Tween动画的实现</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="new_game">开始新游戏</string>
+    <string name="join_game">加入到游戏</string>
+    <string name="settings">设置</string>
 
 </resources>

@@ -8,38 +8,47 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/*
+ * 首页面 activity
+ * 让用户选择 "发起新游戏" 或者 "加入到游戏"
+ */
 public class MainActivity extends Activity {
 
 	public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+	
+	private View.OnKeyListener button_events = new View.OnKeyListener() {
+		@Override
+		public boolean onKey(View v, int keyCode, KeyEvent event) {
+			Log.i("info", String.valueOf(keyCode));
+            //监视硬键盘按键
+            if(event.getAction()== KeyEvent.ACTION_DOWN && keyCode== KeyEvent.KEYCODE_ENTER){
+                    //按住把EditView中的文版显示在吐司消息中
+                    Toast.makeText(MainActivity.this, "test message",
+                                    Toast.LENGTH_SHORT).show();
+                    //返回true说明你已经处理了这个事件并且它应该就此终止，如果返回false就表示此事件还需要继续传递下去
+                    return false;
+            }
+            return false;
+		}
+	};
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText editText = (EditText) findViewById(R.id.edit_message);
-    	editText.setMovementMethod(ScrollingMovementMethod.getInstance());
-    	// 调用 打电话的系统程序
+        final Button new_game_btn= (Button) findViewById(R.id.new_game_btn);
+        final Button join_game_btn= (Button) findViewById(R.id.join_game_btn);
+        final Button setting_btn= (Button) findViewById(R.id.setting_btn);
+
+        // 调用 打电话的系统程序
     	// Intent intent2 = new Intent(Intent.ACTION_DIAL, Uri.parse("tel://10010"));
     	
-    	editText.setOnKeyListener(new View.OnKeyListener() {
-			@Override
-			public boolean onKey(View v, int keyCode, KeyEvent event) {
-				Log.i("info", String.valueOf(keyCode));
-                //监视硬键盘按键
-                if(event.getAction()== KeyEvent.ACTION_DOWN && keyCode== KeyEvent.KEYCODE_ENTER){
-                        //按住把EditView中的文版显示在吐司消息中
-                        Toast.makeText(MainActivity.this, "test message",
-                                        Toast.LENGTH_SHORT).show();
-                        //返回true说明你已经处理了这个事件并且它应该就此终止，如果返回false就表示此事件还需要继续传递下去
-                        return false;
-                }
-                return false;
-			}
-		});
+        new_game_btn.setOnKeyListener(button_events);
 		
     }
 
