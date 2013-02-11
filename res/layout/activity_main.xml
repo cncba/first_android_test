@@ -13,7 +13,6 @@
         android:layout_above="@+id/join_game_btn"
         android:layout_alignLeft="@+id/join_game_btn"
         android:layout_marginBottom="62dp"
-        android:onClick="sendMessage"
         android:text="@string/new_game" />
 
     <Button

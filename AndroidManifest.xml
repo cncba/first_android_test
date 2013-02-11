@@ -18,6 +18,7 @@
             android:label="@string/title_activity_splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -32,6 +33,18 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gaitianxia.cache_bad_egg.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.gaitianxia.cache_bad_egg.NewGameActivity"
+            android:label="@string/title_activity_new_game" >
+        </activity>
+        <activity
+            android:name="com.gaitianxia.cache_bad_egg.JoinGameActivity"
+            android:label="@string/title_activity_join_game" >
+        </activity>
+        <activity
+            android:name="com.gaitianxia.cache_bad_egg.SettingActivity"
+            android:label="@string/title_activity_setting" >
         </activity>
     </application>
 

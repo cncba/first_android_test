@@ -7,42 +7,12 @@
     <string name="button_send">Send</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_display_message">My Message</string>
-    <string name="long_text">My Message
-        · Android软件开发之盘点所有Dialog对话框大合集（一）
-·Android软件开发之盘点自定义View界面大合集（二）
-·Android软件开发之盘点常用系统控件界面大合集（三）
-·Android游戏开发之地图编辑器的使用以及绘制地图 （四）
-· Android游戏开发之摄像头的原理以及更新 （五）
-·Android软件开发之TextView详解（六）
-·Android游戏开发之游戏帧动画的播放与处理（七）
-·Android软件开发之EditText 详解（八）
-· Android游戏开发之检测游戏碰撞的原理实现（九）
-·Android游戏开发之构建游戏框架View与SurFaceView的区别
-·Android软件开发之ListView 详解 （十一）
-·Android 软件开发之如何使用Eclipse Debug调试程序详解
-·Android游戏开发之绘制游戏主菜单与进度条加载进度
-·Android 软件开发之数据的 新建 储存 读取 删除 详解
-·Android 游戏开发之主角的移动与地图的平滑滚动（十五）
-·Android软件开发之盘点界面五大布局（十六）
-·Android游戏开发之数据库SQLite 详细介绍（十七）
-·Android软件开发之应用程序之间的通信介绍（十八）
-·Android游戏开发之切换游戏场景特效的实现 （十九）
-·Android游戏开发之飞行射击类游戏原理实现（二十）
-·Android游戏开发之处理音乐与音效太鼓达人游戏原理
-·Android游戏开发之处理按键的响应方式（二十二）
-·Android游戏开发之单点触摸与多点触摸的响应方式
-·Android游戏开发之触摸轨迹曲线的实现处理（二十四）
-·Android游戏开发之小球重力感应实现（二十五）
-·Android游戏开发之多线程的操作方式（二十六）
-·Android游戏开发之横竖屏的切换（二十七）
-·Android软件开发之PreferenceActivity中的组件
-·Android软件开发之获取通讯录联系人信息（二十九）
-·Android软件开发之发送短信与系统短信库解析（三十）
-·Android游戏开发之使用AnimationDrable实现Frame动画
-·Android游戏开发之Tween动画的实现</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="new_game">开始新游戏</string>
     <string name="join_game">加入到游戏</string>
     <string name="settings">设置</string>
+    <string name="title_activity_new_game">新游戏</string>
+    <string name="title_activity_join_game">JoinGameActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
 
 </resources>
