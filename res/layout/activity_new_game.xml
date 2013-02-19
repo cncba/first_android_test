@@ -1,14 +1,63 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".NewGameActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="新游戏" />
+        android:layout_alignParentBottom="true" >
+		<Button
+		    android:id="@+id/start_game_btn"
+		    android:text="开始新游戏"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    />
+    </LinearLayout>
 
+    
+    <FrameLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="新游戏" />
+
+        <ImageButton
+            android:id="@+id/setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@android:drawable/btn_star" />
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/header_layout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+    </LinearLayout>
+
+    
+    
 </RelativeLayout>

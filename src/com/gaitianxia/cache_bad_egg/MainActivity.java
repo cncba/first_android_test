@@ -20,20 +20,25 @@ public class MainActivity extends Activity {
 
 	public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
+	/*
+	 * 主界面按钮点击事件
+	 */
 	private View.OnClickListener button_on_click = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
 			Intent intent;
 			switch (v.getId()) {
+			// 当点击 新游戏
 			case R.id.new_game_btn:
 				intent = new Intent(MainActivity.this, NewGameActivity.class);
 				startActivity(intent);
 				break;
+			// 当点击 加入游戏
 			case R.id.join_game_btn:
 				intent = new Intent(MainActivity.this, JoinGameActivity.class);
 				startActivity(intent);
 				break;
-				
+			// 当点击 设置
 			case R.id.setting_btn:
 				intent = new Intent(MainActivity.this, SettingActivity.class);
 				startActivity(intent);
