@@ -1,4 +1,6 @@
-package com.gaitianxia.cache_bad_egg;
+package com.gaitianxia.catch_bad_egg;
+
+import com.gaitianxia.catch_bad_egg.R;
 
 import android.os.Bundle;
 import android.app.Activity;

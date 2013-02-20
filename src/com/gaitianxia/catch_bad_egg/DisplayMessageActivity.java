@@ -1,4 +1,4 @@
-package com.gaitianxia.cache_bad_egg;
+package com.gaitianxia.catch_bad_egg;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
